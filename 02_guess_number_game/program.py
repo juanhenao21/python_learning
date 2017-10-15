@@ -7,15 +7,17 @@ print()
 
 the_number = random.randint(0,100)
 
-guess_text = input('Gues a number between 0 and 100: ')
+guess = -1 
 
-guess = int(guess_text)
+name = input('What is your name? ')
 
-print(the_number<guess)
+while (guess != the_number):
 
-if (guess < the_number):
-    print('Too low')
-elif (guess > the_number):
-    print('Too high')
-else:
-    print('You win')
+    guess_text = input('Gues a number between 0 and 100: ')
+    guess = int(guess_text)
+    if (guess < the_number):
+        print('Sorry {}, your guess of {} was too LOW.' .format(name,guess))
+    elif (guess > the_number):
+        print('Sorry {}, your guess of {} was too HIGH.' .format(name,guess))
+    else:
+        print('Excellent work {}, you won. It was {}!' .format(name,guess))
