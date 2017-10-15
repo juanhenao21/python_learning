@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+add_entry	../04_journal/journal.py	/^def add_entry(text, journal_data):$/;"	kind:function	line:24
+add_entry	../04_journal/program.py	/^def add_entry(data):$/;"	kind:function	line:47
+compute_days_between_dates	../03_birthday/program.py	/^def compute_days_between_dates(original_date, target_date):$/;"	kind:function	line:18
+compute_future_days_birthday	../03_birthday/program.py	/^def compute_future_days_birthday(original_date, target_date):$/;"	kind:function	line:24
+get_birthday_from_user	../03_birthday/program.py	/^def get_birthday_from_user():$/;"	kind:function	line:9
+get_full_pathname	../04_journal/journal.py	/^def get_full_pathname(name):$/;"	kind:function	line:28
+greeting	../01_hello_world/program.py	/^greeting = 'Nice to meet you ' + user_text$/;"	kind:variable	line:7
+guess	../02_guess_number_game/program.py	/^    guess = int(guess_text)$/;"	kind:variable	line:17
+guess	../02_guess_number_game/program.py	/^guess = -1 $/;"	kind:variable	line:10
+guess_text	../02_guess_number_game/program.py	/^    guess_text = input('Gues a number between 0 and 100: ')$/;"	kind:variable	line:16
+journal.py	../04_journal/journal.py	1;"	kind:file	line:1
+list_entries	../04_journal/program.py	/^def list_entries(data):$/;"	kind:function	line:40
+load	../04_journal/journal.py	/^def load(name):$/;"	kind:function	line:4
+main	../03_birthday/program.py	/^def main():$/;"	kind:function	line:51
+main	../04_journal/program.py	/^def main():$/;"	kind:function	line:3
+name	../02_guess_number_game/program.py	/^name = input('What is your name? ')$/;"	kind:variable	line:12
+print_birthday_information	../03_birthday/program.py	/^def print_birthday_information(days):$/;"	kind:function	line:37
+print_future_birthday	../03_birthday/program.py	/^def print_future_birthday(future_days):$/;"	kind:function	line:45
+print_header	../03_birthday/program.py	/^def print_header():$/;"	kind:function	line:3
+print_header	../04_journal/program.py	/^def print_header():$/;"	kind:function	line:8
+program.py	../01_hello_world/program.py	1;"	kind:file	line:1
+program.py	../02_guess_number_game/program.py	1;"	kind:file	line:1
+program.py	../03_birthday/program.py	1;"	kind:file	line:1
+program.py	../04_journal/program.py	1;"	kind:file	line:1
+run_event_loop	../04_journal/program.py	/^def run_event_loop():$/;"	kind:function	line:15
+save	../04_journal/journal.py	/^def save(name, journal_data):$/;"	kind:function	line:16
+the_number	../02_guess_number_game/program.py	/^the_number = random.randint(0,100)$/;"	kind:variable	line:8
+user_text	../01_hello_world/program.py	/^user_text = input('What is your name? ')$/;"	kind:variable	line:6
