@@ -20,7 +20,7 @@ def run_event_loop():
     journal_name = 'default'
     journal_data = journal.load(journal_name)
 
-    while (cmd != 'x' and not cmd):
+    while (cmd != 'x' and cmd):
         
         cmd = input('[L]ist entries, [A]dd an entry, E[x]it: ')
         cmd = cmd.lower().strip()
