@@ -69,8 +69,28 @@ def query_data(data):
         low_purchase.price, low_purchase.beds, low_purchase.baths))
 
     #Average price house?
-    statistics.mean(data)
+    prices = (
+        p.price #projection or items
+        for p in data # set to process
+    )
 
+    ave_price = statistics.mean(prices)
+    print('The average home price is ${:,}'.format(int(ave_price)))
+
+    #Average price of 2 bedroom houses
+    two_bed_homes = (
+        p #projection or items
+        for p in data # set to process
+        if p.beds == 2# test / condition
+    )
+
+    print(two_bed_homes[0].baths)
+
+    ave_price = statistics.mean((p.price for p in two_bed_homes))
+    ave_baths = statistics.mean((p.baths for p in two_bed_homes))
+    ave_sqft = statistics.mean((p.sq__ft for p in two_bed_homes))
+    print('Average 2-bedroom home is ${:,}, baths= {}, sq ft = {:,}'
+        .format(int(ave_price), round(ave_baths,1), round(ave_sqft,1)))
 
 if __name__ == '__main__':
     main()

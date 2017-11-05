@@ -6,11 +6,14 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 Creature	../07_wizard_battle/actors.py	/^class Creature:$/;"	kind:class	line:4
 Dragon	../07_wizard_battle/actors.py	/^class Dragon(Creature):$/;"	kind:class	line:42
+Purchase	../09_real_estate/data_types.py	/^class Purchase():$/;"	kind:class	line:1
+SearchResult	../08_file_searcher/program.py	/^SearchResult = collections.namedtuple('SearchResult', 'file, line, text')$/;"	kind:variable	line:4
 SmallAnimal	../07_wizard_battle/actors.py	/^class SmallAnimal(Creature):$/;"	kind:class	line:36
 WeatherReport	../05_weather_client/program.py	/^WeatherReport = collections.namedtuple('WeatherReport', 'cond, temp, scale, loc')$/;"	kind:variable	line:6
 Wizard	../07_wizard_battle/actors.py	/^class Wizard(Creature):$/;"	kind:class	line:17
 __init__	../07_wizard_battle/actors.py	/^    def __init__(self, name, level, scaliness, breaths_fire):$/;"	kind:member	line:43
 __init__	../07_wizard_battle/actors.py	/^    def __init__(self, name, the_level):$/;"	kind:member	line:6
+__init__	../09_real_estate/data_types.py	/^    def __init__($/;"	kind:member	line:2
 __repr__	../07_wizard_battle/actors.py	/^    def __repr__(self):$/;"	kind:member	line:10
 actors.py	../07_wizard_battle/actors.py	1;"	kind:file	line:1
 add_entry	../04_journal/journal.py	/^def add_entry(text, journal_data):$/;"	kind:function	line:28
@@ -20,21 +23,28 @@ cat_service.py	../06_lolcat_factory/cat_service.py	1;"	kind:file	line:1
 cleanup_text	../05_weather_client/program.py	/^def cleanup_text(text : str):$/;"	kind:function	line:53
 compute_days_between_dates	../03_birthday/program.py	/^def compute_days_between_dates(original_date, target_date):$/;"	kind:function	line:18
 compute_future_days_birthday	../03_birthday/program.py	/^def compute_future_days_birthday(original_date, target_date):$/;"	kind:function	line:24
+concept_dicts.py	../09_real_estate/concept_dicts.py	1;"	kind:file	line:1
+create_from_dict	../09_real_estate/data_types.py	/^    def create_from_dict(lookup):$/;"	kind:member	line:21
+data_types.py	../09_real_estate/data_types.py	1;"	kind:file	line:1
 display_cats	../06_lolcat_factory/program.py	/^def display_cats(folder):$/;"	kind:function	line:43
 download_cats	../06_lolcat_factory/program.py	/^def download_cats(folder):$/;"	kind:function	line:33
+factorial	../08_file_searcher/play.py	/^def factorial(n):$/;"	kind:function	line:4
+fibonacci	../08_file_searcher/play.py	/^def fibonacci(limit):$/;"	kind:function	line:19
+fibonacci_co	../08_file_searcher/play.py	/^def fibonacci_co():$/;"	kind:function	line:37
 find_city_and_state_from_location	../05_weather_client/program.py	/^def find_city_and_state_from_location(text : str):$/;"	kind:function	line:61
 game_loop	../07_wizard_battle/program.py	/^def game_loop():$/;"	kind:function	line:19
 get_birthday_from_user	../03_birthday/program.py	/^def get_birthday_from_user():$/;"	kind:function	line:9
 get_cat	../06_lolcat_factory/cat_service.py	/^def get_cat(folder, name):$/;"	kind:function	line:6
+get_data_file	../09_real_estate/program.py	/^def get_data_file():$/;"	kind:function	line:21
 get_data_from_url	../06_lolcat_factory/cat_service.py	/^def get_data_from_url(url):$/;"	kind:function	line:12
 get_defensive_roll	../07_wizard_battle/actors.py	/^    def get_defensive_roll(self):$/;"	kind:member	line:13
 get_defensive_roll	../07_wizard_battle/actors.py	/^    def get_defensive_roll(self):$/;"	kind:member	line:37
 get_defensive_roll	../07_wizard_battle/actors.py	/^    def get_defensive_roll(self):$/;"	kind:member	line:48
-get_folder_from_user	../08_file_searcher/program.py	/^def get_folder_from_user():$/;"	kind:function	line:28
+get_folder_from_user	../08_file_searcher/program.py	/^def get_folder_from_user():$/;"	kind:function	line:42
 get_full_pathname	../04_journal/journal.py	/^def get_full_pathname(name):$/;"	kind:function	line:32
 get_html_from_web	../05_weather_client/program.py	/^def get_html_from_web(zipcode):$/;"	kind:function	line:24
 get_or_create_output_folder	../06_lolcat_factory/program.py	/^def get_or_create_output_folder():$/;"	kind:function	line:21
-get_search_text_from_user	../08_file_searcher/program.py	/^def get_search_text_from_user():$/;"	kind:function	line:39
+get_search_text_from_user	../08_file_searcher/program.py	/^def get_search_text_from_user():$/;"	kind:function	line:53
 get_weather_from_html	../05_weather_client/program.py	/^def get_weather_from_html(html):$/;"	kind:function	line:30
 greeting	../01_hello_world/program.py	/^greeting = 'Nice to meet you ' + user_text$/;"	kind:variable	line:7
 guess	../02_guess_number_game/program.py	/^    guess = int(guess_text)$/;"	kind:variable	line:17
@@ -43,12 +53,19 @@ guess_text	../02_guess_number_game/program.py	/^    guess_text = input('Gues a n
 journal.py	../04_journal/journal.py	1;"	kind:file	line:1
 list_entries	../04_journal/program.py	/^def list_entries(data):$/;"	kind:function	line:40
 load	../04_journal/journal.py	/^def load(name):$/;"	kind:function	line:4
+load_file	../09_real_estate/program.py	/^def load_file(filename):$/;"	kind:function	line:26
+load_file_basic	../09_real_estate/program.py	/^def load_file_basic(filename):$/;"	kind:function	line:44
+lookup	../09_real_estate/concept_dicts.py	/^lookup = dict()$/;"	kind:variable	line:2
+lookup	../09_real_estate/concept_dicts.py	/^lookup = dict(age=42, loc='Italy')$/;"	kind:variable	line:4
+lookup	../09_real_estate/concept_dicts.py	/^lookup = {'age': 42, 'loc': 'Italy'}$/;"	kind:variable	line:3
+lookup	../09_real_estate/concept_dicts.py	/^lookup = {}$/;"	kind:variable	line:1
 main	../03_birthday/program.py	/^def main():$/;"	kind:function	line:51
 main	../04_journal/program.py	/^def main():$/;"	kind:function	line:3
 main	../05_weather_client/program.py	/^def main():$/;"	kind:function	line:9
 main	../06_lolcat_factory/program.py	/^def main():$/;"	kind:function	line:6
 main	../07_wizard_battle/program.py	/^def main():$/;"	kind:function	line:6
-main	../08_file_searcher/program.py	/^def main():$/;"	kind:function	line:4
+main	../08_file_searcher/program.py	/^def main():$/;"	kind:function	line:7
+main	../09_real_estate/program.py	/^def main():$/;"	kind:function	line:7
 name	../02_guess_number_game/program.py	/^name = input('What is your name? ')$/;"	kind:variable	line:12
 play.py	../08_file_searcher/play.py	1;"	kind:file	line:1
 print_birthday_information	../03_birthday/program.py	/^def print_birthday_information(days):$/;"	kind:function	line:37
@@ -57,7 +74,8 @@ print_header	../03_birthday/program.py	/^def print_header():$/;"	kind:function	l
 print_header	../04_journal/program.py	/^def print_header():$/;"	kind:function	line:8
 print_header	../06_lolcat_factory/program.py	/^def print_header():$/;"	kind:function	line:14
 print_header	../07_wizard_battle/program.py	/^def print_header():$/;"	kind:function	line:12
-print_header	../08_file_searcher/program.py	/^def print_header():$/;"	kind:function	line:21
+print_header	../08_file_searcher/program.py	/^def print_header():$/;"	kind:function	line:35
+print_header	../09_real_estate/program.py	/^def print_header():$/;"	kind:function	line:14
 print_the_header	../05_weather_client/program.py	/^def print_the_header():$/;"	kind:function	line:17
 program.py	../01_hello_world/program.py	1;"	kind:file	line:1
 program.py	../02_guess_number_game/program.py	1;"	kind:file	line:1
@@ -67,10 +85,12 @@ program.py	../05_weather_client/program.py	1;"	kind:file	line:1
 program.py	../06_lolcat_factory/program.py	1;"	kind:file	line:1
 program.py	../07_wizard_battle/program.py	1;"	kind:file	line:1
 program.py	../08_file_searcher/program.py	1;"	kind:file	line:1
+program.py	../09_real_estate/program.py	1;"	kind:file	line:1
+query_data	../09_real_estate/program.py	/^def query_data(data):$/;"	kind:function	line:57
 run_event_loop	../04_journal/program.py	/^def run_event_loop():$/;"	kind:function	line:15
 save	../04_journal/journal.py	/^def save(name, journal_data):$/;"	kind:function	line:20
 save_image	../06_lolcat_factory/cat_service.py	/^def save_image(folder, name, data):$/;"	kind:function	line:17
-search_file	../08_file_searcher/program.py	/^def search_file(filename, search_text):$/;"	kind:function	line:60
-search_folders	../08_file_searcher/program.py	/^def search_folders(folder, text):$/;"	kind:function	line:44
+search_file	../08_file_searcher/program.py	/^def search_file(filename, search_text):$/;"	kind:function	line:81
+search_folders	../08_file_searcher/program.py	/^def search_folders(folder, text):$/;"	kind:function	line:58
 the_number	../02_guess_number_game/program.py	/^the_number = random.randint(0,100)$/;"	kind:variable	line:8
 user_text	../01_hello_world/program.py	/^user_text = input('What is your name? ')$/;"	kind:variable	line:6
