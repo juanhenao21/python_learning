@@ -69,7 +69,7 @@ def query_data(data):
         low_purchase.price, low_purchase.beds, low_purchase.baths))
 
     #Average price house?
-    statistics.mean()
+    statistics.mean(data)
 
 
 if __name__ == '__main__':
